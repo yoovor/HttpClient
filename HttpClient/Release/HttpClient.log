@@ -1,0 +1,16 @@
+﻿  stdafx.cpp
+  HttpClient.cpp
+C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\shlobj.h(1151): warning C4091: “typedef ”: 没有声明变量时忽略“tagGPFIDL_FLAGS”的左侧
+o:\person\httpclient\web\httpclient.h(99): warning C4373: “CHttpClient::SetCookieString”: 虚函数重写“IHttpClient::SetCookieString”，当参数只在 const/volatile 限定符上有差异时，早期版本的编译器未进行重写
+  o:\person\httpclient\web\IHttpClient.h(54): note: 参见“IHttpClient::SetCookieString”的声明
+..\web\HttpClient.cpp(253): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+  dllmain.cpp
+    正在创建库 O:\person\HttpClient\Release\HttpClient.lib 和对象 O:\person\HttpClient\Release\HttpClient.exp
+  正在生成代码
+  163 of 368 functions (44.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  HttpClient.vcxproj -> O:\person\HttpClient\Release\HttpClient.dll
+  HttpClient.vcxproj -> O:\person\HttpClient\Release\HttpClient.pdb (Full PDB)

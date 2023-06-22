@@ -1,0 +1,31 @@
+﻿  stdafx.cpp
+  HttpClient.cpp
+o:\person\httpclient\web\httpclient.h(97): warning C4373: “CHttpClient::SetCookieString”: 虚函数重写“IHttpClient::SetCookieString”，当参数只在 const/volatile 限定符上有差异时，早期版本的编译器未进行重写
+  o:\person\httpclient\web\ihttpclient.h(54): note: 参见“IHttpClient::SetCookieString”的声明
+o:\person\httpclient\web\httpclient.cpp(253): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+o:\person\httpclient\web\httpclient.cpp(717): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+o:\person\httpclient\web\httpclient.cpp(728): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+o:\person\httpclient\web\httpclient.cpp(748): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  dllmain.cpp
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_easy_escape，该符号在函数 "protected: char * __cdecl CHttpClient::NewEscaped(char const *,int)" (?NewEscaped@CHttpClient@@IEAAPEADPEBDH@Z) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_easy_unescape，该符号在函数 "protected: char * __cdecl CHttpClient::NewUnescaped(char const *,int)" (?NewUnescaped@CHttpClient@@IEAAPEADPEBDH@Z) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_free，该符号在函数 "protected: void __cdecl CHttpClient::Free(char *)" (?Free@CHttpClient@@IEAAXPEAD@Z) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_global_init，该符号在函数 "public: static bool __cdecl CHttpClient::Init(void)" (?Init@CHttpClient@@SA_NXZ) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_global_cleanup，该符号在函数 "public: static bool __cdecl CHttpClient::Init(void)" (?Init@CHttpClient@@SA_NXZ) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_slist_append，该符号在函数 "public: virtual int __cdecl CHttpClient::DoGetFileByPostEx(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > const &,char const *,char const *,char const *)" (?DoGetFileByPostEx@CHttpClient@@UEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@3@PEBD22@Z) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_slist_free_all，该符号在函数 "public: virtual int __cdecl CHttpClient::DoGetFileByPostEx(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > const &,char const *,char const *,char const *)" (?DoGetFileByPostEx@CHttpClient@@UEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@3@PEBD22@Z) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_share_init，该符号在函数 "public: static bool __cdecl CHttpClient::Init(void)" (?Init@CHttpClient@@SA_NXZ) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_share_setopt，该符号在函数 "public: static bool __cdecl CHttpClient::Init(void)" (?Init@CHttpClient@@SA_NXZ) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_share_cleanup，该符号在函数 "public: static bool __cdecl CHttpClient::Init(void)" (?Init@CHttpClient@@SA_NXZ) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_easy_strerror，该符号在函数 "public: virtual void __cdecl CHttpClient::GetErrorString(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,int)" (?GetErrorString@CHttpClient@@UEAAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_easy_init，该符号在函数 "public: __cdecl CHttpClient::CHttpClient(void)" (??0CHttpClient@@QEAA@XZ) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_easy_setopt，该符号在函数 "protected: void __cdecl CHttpClient::AddBuiltInCookie(void *)" (?AddBuiltInCookie@CHttpClient@@IEAAXPEAX@Z) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_easy_perform，该符号在函数 "public: virtual int __cdecl CHttpClientEx::DoProtoLogin(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?DoProtoLogin@CHttpClientEx@@UEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00@Z) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_easy_cleanup，该符号在函数 "public: virtual __cdecl CHttpClient::~CHttpClient(void)" (??1CHttpClient@@UEAA@XZ) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 __imp_curl_easy_getinfo，该符号在函数 "protected: void __cdecl CHttpClient::DealWithResponse(void *)" (?DealWithResponse@CHttpClient@@IEAAXPEAX@Z) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 CRYPTO_num_locks，该符号在函数 "void __cdecl OPENSSL_MT_Cleanup(void)" (?OPENSSL_MT_Cleanup@@YAXXZ) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 CRYPTO_set_locking_callback，该符号在函数 "void __cdecl OPENSSL_MT_Cleanup(void)" (?OPENSSL_MT_Cleanup@@YAXXZ) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 CRYPTO_malloc，该符号在函数 "bool __cdecl OPENSSL_MT_Setup(void)" (?OPENSSL_MT_Setup@@YA_NXZ) 中被引用
+HttpClient.obj : error LNK2019: 无法解析的外部符号 CRYPTO_free，该符号在函数 "void __cdecl OPENSSL_MT_Cleanup(void)" (?OPENSSL_MT_Cleanup@@YAXXZ) 中被引用
+O:\person\HttpClient\x64\Debug\HttpClient.dll : fatal error LNK1120: 20 个无法解析的外部命令

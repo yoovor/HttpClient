@@ -1,0 +1,5 @@
+EXPORTS
+	InitHttpClient
+	UnInitHttpClient
+	CreateHttpClient
+	DestroyHttpClient
